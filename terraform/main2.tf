@@ -55,7 +55,7 @@ resource "aws_instance" "nginx_server" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t2.micro"
 
-  key_name = "YOUR-KEYPAIR-NAME"   # <-- replace with your AWS keypair
+  key_name = "Demokeys"   # <-- replace with your AWS keypair
 
   vpc_security_group_ids = [aws_security_group.nginx_sg.id]
 
