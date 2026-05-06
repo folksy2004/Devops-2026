@@ -1,0 +1,37 @@
+{
+  "version": 4,
+  "terraform_version": "1.15.1",
+  "serial": 55,
+  "lineage": "957f4bcc-06a5-188c-fc68-ce8acb4bcbbe",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_key_pair",
+      "name": "dkernel_key",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:058264116082:key-pair/Demokeys",
+            "fingerprint": "XQBNH/juDr9n5hU8eYkWlOfLzz2sXDTpfKiIQ3DURsI=",
+            "id": "Demokeys",
+            "key_name": "Demokeys",
+            "key_name_prefix": "",
+            "key_pair_id": "key-0d4906deb08e832ce",
+            "key_type": "ed25519",
+            "public_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIErdlXbLZb3elCQ5NLPleQR+nysW0hhIf6ddY3qnelIu ansible",
+            "region": "us-east-1",
+            "tags": null,
+            "tags_all": {}
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
