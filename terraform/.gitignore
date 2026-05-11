@@ -1,13 +1,45 @@
-# Terraform
+# =========================
+# Terraform runtime
+# =========================
 .terraform/
 *.tfstate
-*.tfstate.backup
+*.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
 
-# Terraform lock (optional: keep or ignore)
-#.terraform.lock.hcl
+# =========================
+# Terraform lock file
+# IMPORTANT: keep this in Git
+# =========================
+# DO NOT IGNORE:
+# .terraform.lock.hcl
 
-# Editor
+# =========================
+# Crash logs
+# =========================
+crash.log
+crash.*.log
+
+# =========================
+# IDE / Editor files
+# =========================
+.vscode/
 *.swp
+*.swo
 
-# OS
+# =========================
+# OS files
+# =========================
 .DS_Store
+Thumbs.db
+
+# =========================
+# Optional: local secrets
+# =========================
+# If you want to protect sensitive inputs, keep this:
+# *.tfvars
+
+# BUT allow your lab files if needed:
+!Centos9.tfvars
+!Ubuntu.tfvars
+!example.tfvars
