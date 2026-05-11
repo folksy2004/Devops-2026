@@ -6,13 +6,19 @@
 *.tfstate.*
 terraform.tfstate
 terraform.tfstate.backup
+.terraform.tfstate.lock.info
 
 # =========================
 # Terraform lock file
-# IMPORTANT: keep this in Git
+# Keep this in Git
 # =========================
-# DO NOT IGNORE:
 # .terraform.lock.hcl
+
+# =========================
+# Variable files / secrets
+# =========================
+*.tfvars
+!*.example.tfvars
 
 # =========================
 # Crash logs
@@ -32,14 +38,3 @@ crash.*.log
 # =========================
 .DS_Store
 Thumbs.db
-
-# =========================
-# Optional: local secrets
-# =========================
-# If you want to protect sensitive inputs, keep this:
-# *.tfvars
-
-# BUT allow your lab files if needed:
-!Centos9.tfvars
-!Ubuntu.tfvars
-!example.tfvars
